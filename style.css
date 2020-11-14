@@ -3,6 +3,7 @@
 .attribution {
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -21,25 +22,37 @@ html {
   place-items: center;
 }
 
+.pattern-top {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(images/bg-pattern-top.svg);
+  background-position: top -20rem left -20rem;
+}
+
 .card {
   display: flex;
   flex-flow: column;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: white;
   width: 45rem;
   font-size: 18px;
-  width: 25rem;
+  margin: 0.5rem;
+  width: 22rem;
   height: 25rem;
 }
 
 .card__pattern {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  height: 8rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 13rem;
   background-image: url(images/bg-pattern-card.svg);
 }
 
+.card__image {
+  height: 5rem;
+}
 .card__image img {
   position: relative;
   top: -3rem;
@@ -51,6 +64,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: hsl(229, 23%, 23%);
 }
 .card__info-name {
   font-weight: 700;
@@ -58,8 +72,63 @@ html {
 
 .card__info-type {
   font-weight: 400;
+  color: hsl(227, 10%, 46%);
 }
 
 .card__location {
-  font-size: 12px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  height: 4rem;
+  font-size: 14px;
+  color: hsl(227, 10%, 46%);
+}
+
+hr {
+  position: relative;
+  color: ;
+  border: none;
+  border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.card__social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6rem;
+  color: hsl(229, 23%, 23%);
+}
+
+.card__social-followers {
+  display: flex;
+  flex-flow: column;
+}
+
+.card__social-followers--text {
+  font-size: 10px;
+  color: hsl(227, 10%, 46%);
+  margin-top: 0.3rem;
+}
+
+.card__social-likes {
+  display: flex;
+  flex-flow: column;
+}
+
+.card__social-likes--text {
+  font-size: 10px;
+  color: hsl(227, 10%, 46%);
+  margin-top: 0.3rem;
+}
+
+.card__social-photos {
+  display: flex;
+  flex-flow: column;
+}
+
+.card__social-photos--text {
+  font-size: 10px;
+  color: hsl(227, 10%, 46%);
+  margin-top: 0.3rem;
 }
